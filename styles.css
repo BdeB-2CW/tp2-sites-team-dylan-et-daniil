@@ -128,7 +128,7 @@ input[type="text"]:focus {
 }
 
 /* Style the submit button */
-input[type=submit] {
+#clickMe {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   width: 100%;
