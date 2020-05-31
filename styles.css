@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  height: 100%;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  background-image: url("/images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 8vh;
+  box-shadow: 0 3px 5px 0 #8f8f8f;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-link {
+  color: #3aa70c;
+  text-decoration: none;
+  padding: 15px;
+  font-size: 16px;
+}
+
+.nav-link:hover {
+  background-color: #3aa70c;
+  color: white;
+}
+
+.logo {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  font-size: 38px;
+  margin-left: 30px;
+  line-height: 73px;
+  color: #3aa70c;
+  display: flex;
+  flex: 1;
+}
+
+nav {
+  margin: 4%;
+  justify-content: flex-end;
+}
+
+.button {
+  color: white;
+  background-color: #3aa70c;
+  border-radius: 14px;
+}
+
+.presentation {
+  display: flex;
+  width: 90%;
+  min-height: 80vh;
+  margin-top: 5%;
+  margin-left: 5%;
+  align-items: center;
+}
+
+.introduction {
+  flex: 1;
+}
+
+.joindre {
+  width: 20%;
+  height: 50%;
+  box-shadow: 0 4px 8px 0 rgba(58, 58, 58, 0.726);
+  border-radius: 10px;
+}
+
+.boite-joindre {
+  background-color: rgba(255, 255, 255, 0.39);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+
+.boite-desc{
+	background-color: white;
+}
+.label{
+	margin-left: 2%;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="text"] {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #646464;
+  box-shadow: 0 3px 5px 0 #8f8f8f;
+  width: 100%;
+  height: 35px;
+  border: 2px solid #aaa;
+  border-radius: 5px;
+  margin: auto;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  align-items: center;
+}
+
+input[type="text"]:focus {
+  border-color: #3aa70c;
+  box-shadow: 0 0 8px 0 #3aa70c;
+}
