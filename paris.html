@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>BetEz</title>
+	<link rel="stylesheet" href="styles.css" />
+	<script src="script.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="pays.css">
+</head>
+
+<body>
+	<body>
+		<header>
+			<a href="index.html" class="logo">BetEz</a>
+			<nav>
+				<ul class="nav-links">
+					<li><a class="nav-link" href="index.html">Accueil</a></li>
+					<li><a class="nav-link" href="portefeuille.html">Portefeuille</a></li>
+					<li><a class="nav-link" href="matchs.html">Matchs</a></li>
+					<li><a class="nav-link" href="paris.html">Paris</a></li>
+					<li><a class="nav-link" href="apropos.html">À propos</a></li>
+				</ul>
+			</nav>
+		</header>
+
+
+	<main>
+		<section class="boite-content">
+			<h1 class="titre">Paris</h1>
+			<hr>
+			<div class="equipes">
+				<div class="equipe1">
+					<img class="bayern-logo" src="./images/bayernMunich.png"
+					<h3>Bayern Munich</h3>
+					<select name="paris-1" id="type-pari">
+						<option value="gagnant">Gagnant</option>
+						<option value="buts">Buts</option>
+						<option value="carton-jaune">Cartons jaunes</option>
+						<option value="carton-rouge">Cartons rouges</option>
+					</select>
+				</div>
+				<div class="milieu">
+					<div class="cote">
+						<p>Cote</p>
+					</div>
+					<div class="parier">
+						<input id="clickMe" type="button" value="Parier" onclick="ins_uti();" />
+					</div>
+				</div>
+				<div class="equipe2">
+					<img class="chelsea-logo" src="./images/chelsea.png"
+					<h3>Chelsea FC</h3>
+					<select name="paris-2" id="type-pari">
+						<option value="gagnant">Gagnant</option>
+						<option value="buts">Buts</option>
+						<option value="carton-jaune">Cartons jaunes</option>
+						<option value="carton-rouge">Cartons rouges</option>
+					</select>
+				</div>
+
+			</div>
+		</section>
+	</main>
+</body>
+
+</html>
+

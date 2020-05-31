@@ -97,9 +97,99 @@ nav {
   padding: 5px;
 }
 
-.label{
-	margin-left: 2%;
+.label {
+  margin-left: 2%;
 }
+
+/*Page portefeuille-----------*/
+.boite-content {
+  background-color: rgba(255, 255, 255, 0.699);
+  margin: auto;
+  margin-top: 13vh;
+  height: 65vh;
+  width: 70%;
+  align-content: center;
+}
+
+.titre {
+  padding-left: 50px;
+  padding-top: 25px;
+  padding-bottom: 12px;
+}
+
+hr {
+  border-width: 1px;
+  margin: auto;
+  width: 60%;
+  color: rgba(94, 94, 94, 0.144);
+}
+
+/*Page portefeuille-----------*/
+.categories {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10%;
+}
+
+.solde {
+  align-content: center;
+}
+
+.ajouter-fonds {
+  display: flex;
+  flex-direction: column;
+}
+
+.paypal,
+.carte-credit {
+  width: 181px;
+  height: auto;
+  padding-top: 20px;
+}
+
+.retirer-fonds {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Page paris-----------*/
+.equipes {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10%;
+}
+
+.bayern-logo, .chelsea-logo{
+  height: 70px;
+  width: auto;
+}
+.equipe1, .equipe2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#type-pari{
+  margin-top: 3em;
+}
+
+.milieu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.parier{
+  padding-top: 230px;
+}
+
+/*Page A propos-----------*/
+.lorem{
+  padding-top: 4%;
+  padding-left: 3%;
+
+}
+
 
 input[type="radio"] {
   display: none;
@@ -125,6 +215,20 @@ input[type="text"] {
 input[type="text"]:focus {
   border-color: #3aa70c;
   box-shadow: 0 0 8px 0 #3aa70c;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  width: 100%;
+  background-color: #3aa70c;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 /* Style the submit button */
