@@ -1,0 +1,302 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  height: 100%;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  background-image: url("./images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 8vh;
+  box-shadow: 0 3px 5px 0 #8f8f8f;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-link {
+  color: #3aa70c;
+  text-decoration: none;
+  padding: 15px;
+  font-size: 16px;
+}
+
+.nav-link:hover {
+  background-color: #3aa70c;
+  color: white;
+}
+
+.logo {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  font-size: 38px;
+  margin-left: 30px;
+  line-height: 73px;
+  color: #3aa70c;
+  display: flex;
+  flex: 1;
+}
+
+nav {
+  margin: 4%;
+  justify-content: flex-end;
+}
+
+.button {
+  color: white;
+  background-color: #3aa70c;
+  border-radius: 14px;
+}
+
+.presentation {
+  display: flex;
+  width: 90%;
+  min-height: 80vh;
+  margin-top: 5%;
+  margin-left: 5%;
+  align-items: center;
+}
+
+.introduction {
+  color: white;
+  flex: 1;
+  text-shadow: 2px 2px black;
+}
+
+.joindre {
+  width: 20%;
+  height: 50%;
+  box-shadow: 0 4px 8px 0 rgba(58, 58, 58, 0.726);
+  border-radius: 10px;
+}
+
+.boite-joindre {
+  background-color: rgba(255, 255, 255, 0.39);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+
+.label {
+  margin-left: 2%;
+}
+
+.boite-content {
+  background-color: rgba(255, 255, 255, 0.699);
+  margin: auto;
+  margin-top: 13vh;
+  height: 65vh;
+  width: 70%;
+  align-content: center;
+}
+
+.titre {
+  padding-left: 50px;
+  padding-top: 25px;
+  padding-bottom: 12px;
+}
+
+hr {
+  border-width: 1px;
+  margin: auto;
+  width: 60%;
+  color: rgba(94, 94, 94, 0.144);
+}
+
+/*Page portefeuille-----------*/
+.categories {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10%;
+}
+
+.solde {
+  align-content: center;
+}
+
+.ajouter-fonds {
+  display: flex;
+  flex-direction: column;
+}
+
+.paypal,
+.carte-credit {
+  width: 181px;
+  height: auto;
+  padding-top: 20px;
+}
+
+.retirer-fonds {
+  display: flex;
+  flex-direction: column;
+}
+/*Page matchs-----------*/
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lineup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+/*Page paris-----------*/
+.equipes {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 7%;
+}
+
+.bayern-logo,
+.chelsea-logo {
+  height: 70px;
+  width: auto;
+}
+.equipe1,
+.equipe2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#type-pari {
+  margin-top: 3em;
+}
+
+.milieu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.parier {
+  padding-top: 180px;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Bets inside the dropdown */
+.dropdown-content span {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+/*Page A propos-----------*/
+.lorem {
+  padding-top: 4%;
+  padding-left: 3%;
+}
+
+input[type="text"] {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #646464;
+  box-shadow: 0 3px 5px 0 #8f8f8f;
+  width: 100%;
+  height: 35px;
+  border: 2px solid #aaa;
+  border-radius: 5px;
+  margin: auto;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  align-items: center;
+}
+
+input[type="text"]:focus {
+  border-color: #3aa70c;
+  box-shadow: 0 0 8px 0 #3aa70c;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  width: 100%;
+  background-color: #3aa70c;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Style the submit button */
+#clickMe {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  width: 100%;
+  background-color: #3aa70c;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

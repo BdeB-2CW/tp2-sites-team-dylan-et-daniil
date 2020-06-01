@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>BetEz</title>
+	<link rel="stylesheet" href="styles.css" />
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<body>
+		<header>
+			<a href="index.html" class="logo">BetEz</a>
+			<nav>
+				<ul class="nav-links">
+					<li><a class="nav-link" href="index.html">Accueil</a></li>
+					<li><a class="nav-link" href="portefeuille.html">Portefeuille</a></li>
+					<li><a class="nav-link" href="matchs.html">Matchs</a></li>
+					<li><a class="nav-link" href="paris.html">Paris</a></li>
+					<li><a class="nav-link" href="apropos.html">À propos</a></li>
+				</ul>
+			</nav>
+			<link rel="stylesheet" href="pari.css">
+		</header>
+
+
+		<main>
+			<section class="boite-content">
+				<h1 class="titre">Paris</h1>
+				<hr>
+				<div class="equipes">
+					<div class="equipe1">
+						<img class="bayern-logo" src="./images/bayernMunich.png">
+						<h3>Bayern Munich</h3>
+						<form class ="options-pari" action="">
+							<input type="radio" name="type" value="gagnant"> Gagnant<br>
+							<input type="radio" name="type" value="buts"> Buts<br>
+							<input type="radio" name="type" value="carton_jaune"> Cartons Jaunes<br>
+							<input type="radio" name="type" value="carton_rouge"> Cartons Rouges<br>
+						</form>
+					</div>
+					<div class="milieu">
+						<div class="cote">
+							<p>Cote</p>
+							<div class="dropdown">
+								<button class="dropbtn">Dropdown</button>
+								<div class="dropdown-content">
+									<span>
+										<form id="pari"></form>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="parier">
+							<input id="clickMe" type="button" value="Parier" onclick="ins_uti();" />
+						</div>
+					</div>
+					<div class="equipe2">
+						<img class="chelsea-logo" src="./images/chelsea.png">
+						<h3>Chelsea FC</h3>
+						<form class ="options-pari" action="">
+							<input type="radio" name="type" value="gagnant"> Gagnant<br>
+							<input type="radio" name="type" value="buts"> Buts<br>
+							<input type="radio" name="type" value="carton_jaune"> Cartons Jaunes<br>
+							<input type="radio" name="type" value="carton_rouge"> Cartons Rouges<br>
+						</form>
+					</div>
+
+				</div>
+			</section>
+		</main>
+		<script src="pari.js"></script>
+	</body>
+
+</html>
