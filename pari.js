@@ -23,14 +23,14 @@ fetch(URL)
                                     input.setAttribute("type", "radio");
                                     input.setAttribute("name", "paris"),
                                     // input.setAttribute("value", innerHTML = `${pari.type_pari} ${pari.cote} ${pari.equipe_id_equipe} ${pari.equipe_id_equipe1}`),
-                                    input.setAttribute("value", innerHTML = `${pari.cote}`),
+                                    input.setAttribute("value", innerHTML = `${pari.cote}`+'x'),
                                       span = createNode("span");
                                       let affichage;
                                       if(pari.type_pari==='gagnant') {
                                         affichage="Gagnant"
                                       }
                                       if(pari.type_pari==='buts') {
-                                        affichage="Buts"
+                                        affichage="Buts (3+)"
                                       }
                                       if(pari.type_pari==='cartonjaune') {
                                         affichage="Carton Jaune"
@@ -60,14 +60,14 @@ fetch(URL)
                                     let input = createNode("INPUT");
                                     input.setAttribute("type", "radio");
                                     input.setAttribute("name", "paris"),
-                                    input.setAttribute("value", innerHTML = `${pari.cote}`),
+                                    input.setAttribute("value", innerHTML = `${pari.cote}`+'x'),
                                       span = createNode("span");
                                       let affichage;
                                       if(pari.type_pari==='gagnant') {
                                         affichage="Gagnant"
                                       }
                                       if(pari.type_pari==='buts') {
-                                        affichage="Buts"
+                                        affichage="Buts (3+)"
                                       }
                                       if(pari.type_pari==='cartonjaune') {
                                         affichage="Carton Jaune"
