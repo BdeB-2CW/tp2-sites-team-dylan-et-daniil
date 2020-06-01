@@ -34,38 +34,21 @@
 					<div class="equipe1">
 						<img class="bayern-logo" src="./images/bayernMunich.png">
 						<h3>Bayern Munich</h3>
-						<form class ="options-pari" action="">
-							<input type="radio" name="type" value="gagnant"> Gagnant<br>
-							<input type="radio" name="type" value="buts"> Buts<br>
-							<input type="radio" name="type" value="carton_jaune"> Cartons Jaunes<br>
-							<input type="radio" name="type" value="carton_rouge"> Cartons Rouges<br>
-						</form>
+						<div id="pari"></div>
 					</div>
 					<div class="milieu">
 						<div class="cote">
-							<p>Cote</p>
-							<div class="dropdown">
-								<button class="dropbtn">Dropdown</button>
-								<div class="dropdown-content">
-									<span>
-										<form id="pari"></form>
-									</span>
-								</div>
-							</div>
+							<p>Cote: </p>
+							<p id="cote"></p>
 						</div>
 						<div class="parier">
-							<input id="clickMe" type="button" value="Parier" onclick="ins_uti();" />
+							<button id="clickMe" onclick="cote()">Afficher la cote</button>
 						</div>
 					</div>
 					<div class="equipe2">
 						<img class="chelsea-logo" src="./images/chelsea.png">
 						<h3>Chelsea FC</h3>
-						<form class ="options-pari" action="">
-							<input type="radio" name="type" value="gagnant"> Gagnant<br>
-							<input type="radio" name="type" value="buts"> Buts<br>
-							<input type="radio" name="type" value="carton_jaune"> Cartons Jaunes<br>
-							<input type="radio" name="type" value="carton_rouge"> Cartons Rouges<br>
-						</form>
+						<div id="pari2"></div>
 					</div>
 
 				</div>
