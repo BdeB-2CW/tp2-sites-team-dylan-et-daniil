@@ -1,0 +1,53 @@
+-- ceci va creer un URI sous le URL qui pourra etre utilise pour y activer les tables en mode REST
+BEGIN
+  ORDS.enable_schema(
+    p_enabled             => TRUE,
+    p_schema              => 'RESTSCOTT',
+    p_url_mapping_type    => 'BASE_PATH',
+    p_url_mapping_pattern => 'tp2',
+    p_auto_rest_auth      => FALSE
+  );
+    
+  COMMIT;
+END;
+/
+
+--activation de la table equipe pour access REST
+BEGIN
+  ORDS.enable_object (
+    p_enabled      => TRUE, -- Default  { TRUE | FALSE }
+    p_schema       => 'RESTSCOTT',
+    p_object       => 'EQUIPE',
+    p_object_type  => 'TABLE', -- Default  { TABLE | VIEW }
+    p_object_alias => 'equipe'
+  );
+    
+  COMMIT;
+END;
+/
+--activation de la table pari pour access REST
+BEGIN
+  ORDS.enable_object (
+    p_enabled      => TRUE, -- Default  { TRUE | FALSE }
+    p_schema       => 'RESTSCOTT',
+    p_object       => 'PARI',
+    p_object_type  => 'TABLE', -- Default  { TABLE | VIEW }
+    p_object_alias => 'pari'
+  );
+    
+  COMMIT;
+END;
+/
+--activation de la table utilisateur pour access REST
+BEGIN
+  ORDS.enable_object (
+    p_enabled      => TRUE, -- Default  { TRUE | FALSE }
+    p_schema       => 'RESTSCOTT',
+    p_object       => 'UTILISATEUR',
+    p_object_type  => 'TABLE', -- Default  { TABLE | VIEW }
+    p_object_alias => 'utilisateur'
+  );
+    
+  COMMIT;
+END;
+/

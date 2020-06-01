@@ -1,0 +1,24 @@
+-- insertion des données dans la table utilisateur
+insert into utilisateur (id_utilisateur,nom,prenom,pays,sexe,email,mot_de_passe,numero_telephone,date_adhesion,derniere_adresse_ip,solde) values (1,'Musk','Elon','USA','Homme','elon.musk@gmail.com','password','1234567899',to_date('5-MAY-2020','DD-MON-YYYY'),19216811,95);
+
+-- insertion des données dans la table transac_compte
+insert into transac_compte (id_t_compte,montant,date_transaction,utilisateur_id_utilisateur) values (1,100,(to_date('5-MAY-2020','DD-MON-YYYY')),1);
+
+-- insertion des données dans la table ligue
+insert into ligue (id_ligue,nom_ligue) values (1,'Champions League');
+
+-- insertion des données dans la table equipe
+insert into equipe (id_equipe,nom_equipe,classement) values (1,'Bayern',1990);
+insert into equipe (id_equipe,nom_equipe,classement) values (2,'Chelsea',1820);
+
+insert into pari (id_pari,statut,type_pari,cote,buts_equipe1,buts_equipe2,ligue_id_ligue,equipe_gagnante,equipe_id_equipe,equipe_id_equipe1) values (1,'disponible','gagnant',1.37,0,0,1,'inconnue',1,2);
+insert into pari (id_pari,statut,type_pari,cote,buts_equipe1,buts_equipe2,ligue_id_ligue,equipe_gagnante,equipe_id_equipe,equipe_id_equipe1) values (2,'disponible','buts',2,0,0,1,'inconnue',1,2);
+insert into pari (id_pari,statut,type_pari,cote,buts_equipe1,buts_equipe2,ligue_id_ligue,equipe_gagnante,equipe_id_equipe,equipe_id_equipe1) values (3,'disponible','cartonjaune',2,0,0,1,'inconnue',1,2);
+insert into pari (id_pari,statut,type_pari,cote,buts_equipe1,buts_equipe2,ligue_id_ligue,equipe_gagnante,equipe_id_equipe,equipe_id_equipe1) values (4,'disponible','cartonrouge',2,0,0,1,'inconnue',1,2);
+insert into pari (id_pari,statut,type_pari,cote,buts_equipe1,buts_equipe2,ligue_id_ligue,equipe_gagnante,equipe_id_equipe,equipe_id_equipe1) values (5,'disponible','gagnant',3.70,0,0,1,'inconnue',2,1);
+insert into pari (id_pari,statut,type_pari,cote,buts_equipe1,buts_equipe2,ligue_id_ligue,equipe_gagnante,equipe_id_equipe,equipe_id_equipe1) values (6,'disponible','buts',2,0,0,1,'inconnue',2,1);
+insert into pari (id_pari,statut,type_pari,cote,buts_equipe1,buts_equipe2,ligue_id_ligue,equipe_gagnante,equipe_id_equipe,equipe_id_equipe1) values (7,'disponible','cartonjaune',2,0,0,1,'inconnue',2,1);
+insert into pari (id_pari,statut,type_pari,cote,buts_equipe1,buts_equipe2,ligue_id_ligue,equipe_gagnante,equipe_id_equipe,equipe_id_equipe1) values (8,'disponible','cartonrouge',2,0,0,1,'inconnue',2,1);
+
+-- insertion des données dans la table transac_pari
+insert into transac__pari (id_t_pari,nombre_paris,date_transaction,utilisateur_id_utilisateur,pari_id_pari) values (1,1,to_date('5-MAY-2020','DD-MON-YYYY'),1,1);
