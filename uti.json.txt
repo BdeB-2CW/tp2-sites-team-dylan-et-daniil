@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "id_utilisateur":1,
+      "nom":"Musk",
+      "prenom":"Elon",
+      "pays":"USA",
+      "sexe":"Homme",
+      "email":"elon.musk@gmail.com",
+      "mot_de_passe":"password",
+      "numero_telephone":1234567899,
+      "date_adhesion":"2020-05-05T00:00:00Z",
+      "derniere_adresse_ip":19216811,
+      "solde":95,
+      "links": [
+        {
+          "rel": "self",
+          "href": "http://localhost:8080/ords/tp2/utilisateur/1"
+        }
+      ]
+    }
+  ],
+  "hasMore": false,
+  "limit": 25,
+  "offset": 0,
+  "count": 14,
+  "links": [
+    { "rel": "self", "href": "http://localhost:8080/ords/tp2/utilisateur/" },
+    { "rel": "edit", "href": "http://localhost:8080/ords/tp2/utilisateur/" },
+    {
+      "rel": "describedby",
+      "href": "http://localhost:8080/ords/tp2/metadata-catalog/utilisateur/"
+    },
+    { "rel": "first", "href": "http://localhost:8080/ords/tp2/utilisateur/" }
+  ]
+}
