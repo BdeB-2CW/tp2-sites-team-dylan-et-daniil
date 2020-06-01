@@ -18,7 +18,7 @@ fetch(URL)
 	.then(function (data) {
 		let pari = data.items; //.results;
 		return pari.map(function (pari) {
-			if (pari.equipe_id_equipe === id_equipe1) {
+			if (pari.equipe_id_equipe === id_equipe1 && pari.statut === 'disponible') {
 				let input = createNode("INPUT");
 				input.setAttribute("type", "radio");
 				input.setAttribute("name", "paris"),
@@ -56,7 +56,7 @@ fetch(URL)
 	.then(function (data) {
 		let pari = data.items; //.results;
 		return pari.map(function (pari) {
-			if (pari.equipe_id_equipe === id_equipe2) {
+			if (pari.equipe_id_equipe === id_equipe2 && pari.statut === 'disponible') {
 				let input = createNode("INPUT");
 				input.setAttribute("type", "radio");
 				input.setAttribute("name", "paris"),
